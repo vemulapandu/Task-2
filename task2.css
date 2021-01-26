@@ -3,34 +3,35 @@ body{
 }
 .links{
     text-align: right;
-    margin: 0px 0px;
+    margin: 0em 0em;
 }
 .geekheaven{
     color: white;
-    margin: 30px 30px;
+    margin: 1.875em 1.875em;
 }
 ul{
     white-space: nowrap;
-    margin: 0px auto;
+    margin: 0em auto;
 }
 ul li{
     width: 20%;
     display: inline-block;
-    margin: 10px 10px;
+    margin: 0.625em 0.625em;
     text-align: center;
     position: relative;
-    top: -120px;
+    top: -7.5em;
 }
 ul li a{
     text-decoration: none;
     color: #13F7D2;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 a:hover{
     text-decoration: underline;
+    color: #13F7D2;
 }
 main{
-    margin: 10px 10px;
+    margin: 0.625em 0.625em;
     columns: 2;
 }
 .intro{
@@ -38,15 +39,15 @@ main{
 }
 h1.intro{
     color: #13F7D2;
-    font-size: 60px;
+    font-size: 3.75em;
 }
 p.intro1{
     color: white;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 p.intro2{
     color: white;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .footer{
     color: white;
@@ -60,10 +61,10 @@ p.intro2{
     color: #13F7D2;
 }
 i{
-    padding: 6px 6px;
-    border: 2px solid #13F7D2;
+    padding: 0.375em 0.375em;
+    border: 0.125em solid #13F7D2;
     border-radius: 50%;
-    margin: 5px 5px;
+    margin: 0.3125em 0.3125em;
 }
 .intro::selection{
     background-color: white;
@@ -88,6 +89,97 @@ i{
 }
 .pic{
     position: relative;
-    left: 180px;
-    top: -40px;
+    left: 11.25em;
+    top: -4.5em;
+}
+.btn-group{
+    display: none;
+    position: relative;
+    right: 50px;
+    bottom: 130px;
+}
+@media screen and (max-width: 1125px){
+    .pic{
+        position: static;
+    }
+}
+@media screen and (max-width: 830px){
+    main{
+        columns: 1;
+    }
+    .pic{
+        position: relative;
+    }
+}
+@media screen and (max-width: 660px){
+    .pic{
+        position: static;
+    }
+}
+@media screen and (max-width: 380px){
+    h1.intro{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 600px){
+    .about-join{
+        display: none;
+    }
+    .btn-group{
+        display: inline;
+        background-color: #1c1e1e;
+        color: #13F7D2;
+    }
+    .btn-group button{
+        background-color: #1c1e1e;
+        color: #13F7D2;
+    }
+    .btn-group button:hover{
+        color: #13F7D2;
+    }
+    .btn-group button::selection{
+        color: #13F7D2;
+    }
+    .fa-bars{
+        color: #13F7D2;
+    }
+    .dropdown-item{
+        color: #13F7D2;
+    }
+    .dropdown-item:hover{
+        text-decoration: underline;
+    }
+    .dropdown-menu{
+        background-color: #1c1e1e;
+    }
+    .dropdown-menu:hover{
+        background-color: #1c1e1e;
+    }
+}
+@media screen and (max-width: 358px){
+    h1.intro{
+        font-size: 3.25em;
+    }
+}
+@media screen and (max-width: 335px){
+    h1.intro{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 450px){
+    .pic{
+        width: 330px;
+        height: 370px;
+    }
+    .geekheaven{
+        width: 85px;
+        height: 75px;
+        margin: 15px 15px;
+    }
+}
+.fa-bars{
+    border: none;
+    font-size: 40px;
+    margin: none;
+    padding: none;
 }
