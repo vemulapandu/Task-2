@@ -176,6 +176,9 @@ i{
         height: 75px;
         margin: 15px 15px;
     }
+    .btn-group{
+        bottom: 80px
+    }
 }
 .fa-bars{
     border: none;
